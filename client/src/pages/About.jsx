@@ -16,7 +16,7 @@ const About = () => {
           }}
         />
       </div>
-      <div className="w-[55%] h-[90%]">
+      <div className="w-full sm:w-[55%] p-5">
         <h1 className="text-4xl text-center text-gray-500 font-bold">
           About ME
         </h1>
