@@ -8,6 +8,7 @@ import userRouter from './routes/user.routes.js';
 import authRouter from './routes/auth.routes.js';
 import postRouter from './routes/post.routes.js';
 import commentRouter from './routes/comment.routes.js';
+import job from "./cron/cron.js";
 
 dotenv.config();
 
@@ -19,6 +20,8 @@ mongoose
   .catch((error) => {
     console.log(error.message);
   });
+
+job();
 
 const __dirname = path.resolve();
 
