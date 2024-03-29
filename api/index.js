@@ -21,7 +21,7 @@ mongoose
     console.log(error.message);
   });
 
-job();
+job.start();
 
 const __dirname = path.resolve();
 
